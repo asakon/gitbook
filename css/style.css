@@ -399,4 +399,69 @@ th {
   text-align: left;
   font-weight: bold;
 }
+
+@font-face {
+  font-family: "DynaPuff";
+  src: url(/fonts/DynaPuff_Condensed-Bold.ttf) format("truetype");
+}
+body {
+  font-family: "Kosugi", sans-serif;
+  line-height: 1.5;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-top: 18px;
+  margin-bottom: 8px;
+  font-size: 1.8rem;
+}
+
+dl {
+  margin-bottom: 12px;
+}
+
+dt {
+  font-size: 1.2rem;
+}
+
+dd {
+  margin-bottom: 12px;
+  margin-left: 6px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media (max-width: 1300px) {
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+.page_header {
+  margin-bottom: 0;
+  padding: 60px 10px 20px;
+  background-color: #fcb0bd;
+  color: #271c19;
+  text-align: center;
+}
+.page_header h1 {
+  font-family: "DynaPuff";
+  font-size: 8rem;
+  line-height: 0.7;
+}
+.page_header p {
+  margin-top: 22px;
+}
+
+.note {
+  padding: 18px 14px 14px 14px;
+  background-color: #dbdcdc;
+  color: #55423d;
+}
 /*# sourceMappingURL=style.css.map */

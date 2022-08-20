@@ -5,71 +5,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Git Book</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kosugi&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <h1>Git Book</h1>
-    <p>Gitコマンドの自分用メモ</p>
-    
-    <section>
-        <h2>git log</h2>
-        <dl>
-            <dt><code>git log --all</code></dt>
-            <dd>全ブランチ</dd>
-            <dt><code>git log --name-status</code></dt>
-            <dd>変更したファイル名（あとで補足する）</dd>
-            <dt><code>git log -p &lt;path&gt;</code></dt>
-            <dd>パス（ファイル）を指定できる</dd>
-        </dl>
-        <p><code>git log</code>は、コミットログが見れる。パラメーターつけて、見たい情報をしぼり込むと便利。<br>
-        基本的には今いるブランチのログを見せるんだなぁ。<br>
-        <code>--graph</code>というオプションも便利。ツリーで見れる。<br>
-        でも、よりグラフィカルな表示ができるツールも便利。Sourcetreeやら、VSCodeの拡張やら(Git Graphが好きです)、tigやら。
-        </p>
+    <section class="page_header">
+        <h1>Git<br>Book</h1>
+        <p>Gitコマンドの自分用メモ</p>
     </section>
-    
-    <section>
-        <h2>git reset</h2>
-        <dl>
-            <dt><code>git reset HEAD</code></dt>
-            <dd>ステージングを取り消す</dd>
-            <dt><code>git reset --hard HEAD^</code></dt>
-            <dd>直近のコミットを破棄して、ひとつ前のコミットが完了した状態に戻す</dd>
-        </dl>
-        <p>HEADのことをもっと理解しないと…</p>
-    </section>
+        
+    <div class="container">
+        <section>
+            <h2>git log</h2>
+            <dl>
+                <dt><code>git log --all</code></dt>
+                <dd>全ブランチ</dd>
+                <dt><code>git log --name-status</code></dt>
+                <dd>変更したファイル名（あとで補足する）</dd>
+                <dt><code>git log -p &lt;path&gt;</code></dt>
+                <dd>パス（ファイル）を指定できる</dd>
+            </dl>
+            <p class="note"><code>git log</code>は、コミットログが見れる。パラメーターつけて、見たい情報をしぼり込むと便利。<br>
+            基本的には今いるブランチのログを見せるんだなぁ。<br>
+            <code>--graph</code>というオプションも便利。ツリーで見れる。<br>
+            でも、よりグラフィカルな表示ができるツールも便利。Sourcetreeやら、VSCodeの拡張やら(Git Graphが好きです)、tigやら。
+            </p>
+        </section>
+        
+        <section>
+            <h2>git reset</h2>
+            <dl>
+                <dt><code>git reset HEAD</code></dt>
+                <dd>ステージングを取り消す</dd>
+                <dt><code>git reset --hard HEAD^</code></dt>
+                <dd>直近のコミットを破棄して、ひとつ前のコミットが完了した状態に戻す</dd>
+            </dl>
+            <p class="note">HEADのことをもっと理解しないと…</p>
+        </section>
 
-    <section>
-        <h2>git show</h2>
-        <dl>
-            <dt><code>git show コミットID</code></dt>
-            <dd>コミットを指定して、コミットの詳細を表示</dd>
-        </dl>
-    </section>
+        <section>
+            <h2>git show</h2>
+            <dl>
+                <dt><code>git show コミットID</code></dt>
+                <dd>コミットを指定して、コミットの詳細を表示</dd>
+            </dl>
+        </section>
 
-    <section>
-        <h2>git stash</h2>
-        <dl>
-            <dt><code>git stash pop</code></dt>
-            <dd>スタッシュを適用して、スタッシュを削除するまで</dd>
-        </dl>
-    </section>
+        <section>
+            <h2>git stash</h2>
+            <dl>
+                <dt><code>git stash pop</code></dt>
+                <dd>スタッシュを適用して、スタッシュを削除するまで</dd>
+            </dl>
+        </section>
 
-    <section>
-        <h2>git diff</h2>
-        <dl>
-            <dt><code>git diff --cached</code></dt>
-            <dd>ステージ済みのdiffを見る</dd>
-        </dl>
-        <p><dfn>cash</dfn>はお金！ スペルに気をつけよう。</p>
-    </section>
+        <section>
+            <h2>git diff</h2>
+            <dl>
+                <dt><code>git diff --cached</code></dt>
+                <dd>ステージ済みのdiffを見る</dd>
+            </dl>
+            <p class="note"><dfn>cash</dfn>はお金！ スペルに気をつけよう。</p>
+        </section>
 
-    <!-- <section>
-        <h2></h2>
-        <dl>
-            <dt><code></code></dt>
-            <dd></dd>
-        </dl>
-    </section> -->
+        <!-- <section>
+            <h2></h2>
+            <dl>
+                <dt><code></code></dt>
+                <dd></dd>
+            </dl>
+        </section> -->
+    </div>
 </body>
 </html>
