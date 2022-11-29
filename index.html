@@ -70,6 +70,15 @@
             <p class="note"><dfn>cash</dfn>はお金！ スペルに気をつけよう。</p>
         </section>
 
+        <section>
+            <h2>ケース：ファイルをコミット漏れした</h2>
+            <ol>
+                <li>漏れたファイルを<code>git add .</code>で、インデックスに登録</li>
+                <li><code>git commit --amend --no-edit</code>で、直前のコミットにまとめる</li>
+            </ol>
+            <p><code>--no-edit</code>オプションをつけると、エディタは開かない。コメントはそのまま。</p>
+            <p>直前のコミットにファイルを追加して、かつ、コメントも修正したい場合は、<code>git commit --amend</code>とすると、エディタが開く。</p>
+        </section>
         <!-- <section>
             <h2></h2>
             <dl>
