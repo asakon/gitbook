@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Git Book</title>
+    <title>Git Guide</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kosugi&display=swap" rel="stylesheet">
@@ -12,7 +12,7 @@
 </head>
 <body>
     <section class="page_header">
-        <h1>Git<br>Book</h1>
+        <h1>Git<br>Guide</h1>
         <p>Gitコマンドの自分用メモ</p>
     </section>
         
@@ -43,6 +43,22 @@
                 <dd>直近のコミットを破棄して、ひとつ前のコミットが完了した状態に戻す</dd>
             </dl>
             <p class="note">HEADのことをもっと理解しないと…</p>
+        </section>
+
+        <section>
+            <h2>git reflog & git reset --hard HEAD@{N}</h2>
+            <p class="note">コミットや操作を指定して、その状態にリポジトリを戻す</p>
+            <dl>
+                <dt><code>git reflog</code></dt>
+                <dd>reflogsに記録されている情報を見る。git reflog showの短縮形</dd>
+                <dd>出力は<br>
+                    ハッシュ HEAD@{0} gitでの操作やコミットログ<br>
+                    ハッシュ HEAD@{1} gitでの操作やコミットログ<br>
+                    ハッシュ HEAD@{2} gitでの操作やコミットログ<br>
+                    となる</dd>
+                <dt><code>git reset --hard HEAD@{N}</code></dt>
+                <dd>コミットや操作を指定して、その状態にリポジトリを戻す</dd>
+            </dl>
         </section>
 
         <section>
